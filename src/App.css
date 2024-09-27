@@ -1,38 +1,138 @@
+/* General App Styles */
 .App {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #333;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 40px;
+}
+
+/* About Section Styling */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic {
+  flex: 1;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-pic img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ccc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about-text {
+  flex: 1;
+  text-align: left;
+  margin-left: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.about-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.about-text h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-text p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: #ffba08;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #ff8f00;
+}
+
+/* Projects, Skills, Achievements, Contact Sections */
+#projects, #skills, #achievements, #contact {
+  text-align: left;
+}
+
+#projects .project-grid, #achievements ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project, ul li {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h3, ul li {
+  font-size: 1.3em;
+}
+
+.project p, ul li {
+  color: #555;
+  line-height: 1.6;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* Hidden sections styling */
+.hidden {
+  display: none;
+}
+
+/* Active section */
+.active {
+  display: block;
 }
