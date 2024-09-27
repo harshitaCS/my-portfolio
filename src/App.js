@@ -97,7 +97,7 @@ function App() {
             <div className="project">
               <h3>Bluetooth Control Robot Car 🚗</h3>
               <p>Developed an Arduino-based Bluetooth-controlled robot car using C++ and a Bluetooth RC controller.</p>
-              <a href="https://github.com/harshitaCS/bluetooth-robot-car" target="_blank" rel="noreferrer noopener">View on GitHub</a>
+              <a href="https://github.com/harshitaCS/arduino_based_project" target="_blank" rel="noreferrer noopener">View on GitHub</a>
             </div>
           </div>
         </section>
