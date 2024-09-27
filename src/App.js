@@ -92,7 +92,7 @@ function App() {
             <div className="project">
               <h3>Fully Quantum Hash Function Generation</h3>
               <p>Design a Fully Quantum Hash Function with Zero Hash Collisions Using Python, IBM Qiskit, and Google Colab</p>
-              <a href="https://github.com/harshitaCS/food-delivery-platform" target="_blank" rel="noreferrer noopener">View on GitHub</a>
+              <a href="https://github.com/harshitaCS/quantum_hash_generation" target="_blank" rel="noreferrer noopener">View on GitHub</a>
             </div>
             <div className="project">
               <h3>Bluetooth Control Robot Car 🚗</h3>
