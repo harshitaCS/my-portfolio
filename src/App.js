@@ -20,7 +20,7 @@ function App() {
           <div className="about-container">
             {/* Profile image container */}
             <div className="profile-pic">
-              <img src={`${process.env.PUBLIC_URL}/images/HARSHITA2.jpeg`} alt="Harshita Meena" />
+              <img src={`${process.env.PUBLIC_URL}/images/harshita.jpg`} alt="Harshita Meena" />
 
             </div>
             
