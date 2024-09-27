@@ -90,8 +90,8 @@ function App() {
               <a href="https://github.com/harshitaCS/GoFundMe" target="_blank" rel="noreferrer noopener">View on GitHub</a>
             </div>
             <div className="project">
-              <h3>Real-Time Food Delivery Platform</h3>
-              <p>Scalable food delivery platform with real-time order tracking using Node.js and WebSocket.</p>
+              <h3>Fully Quantum Hash Function Generation</h3>
+              <p>Design a Fully Quantum Hash Function with Zero Hash Collisions Using Python, IBM Qiskit, and Google Colab</p>
               <a href="https://github.com/harshitaCS/food-delivery-platform" target="_blank" rel="noreferrer noopener">View on GitHub</a>
             </div>
             <div className="project">
