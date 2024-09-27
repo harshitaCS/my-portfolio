@@ -1,19 +1,25 @@
 /* General App Styles */
+html, body {
+  height: 100%; /* Ensure the body takes full height */
+  margin: 0; /* Remove default margin */
+}
+
 .App {
   font-family: 'Arial', sans-serif;
   text-align: center;
   padding: 20px;
+  min-height: 100vh; /* Ensure the App takes full height */
 }
 
 header h1 {
   font-size: 2.5em;
   margin: 10px 0;
-  color: #333;
+  color: #333; /* Dark color for light mode */
 }
 
 header p {
   font-size: 1.2em;
-  color: #666;
+  color: #666; /* Gray color for light mode */
 }
 
 .container {
@@ -43,6 +49,11 @@ section {
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #ccc;
+  transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.profile-pic img:hover {
+  transform: scale(1.1); /* Scale image on hover */
 }
 
 .about-text {
@@ -59,12 +70,12 @@ section {
 .about-text h3 {
   font-size: 1.5em;
   margin-bottom: 20px;
-  color: #333;
+  color: #333; /* Dark color for light mode */
 }
 
 .about-text p {
   font-size: 1.1em;
-  color: #555;
+  color: #555; /* Gray color for light mode */
   line-height: 1.6;
 }
 
@@ -73,19 +84,21 @@ section {
 }
 
 .button-container button {
-  background-color: #ffba08;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  margin: 10px;
-  font-size: 1em;
-  cursor: pointer;
-  border-radius: 50px;
-  transition: background-color 0.3s ease;
+  background-color: #ffba08; /* Original background color */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  padding: 12px 24px; /* Padding */
+  margin: 10px; /* Margin */
+  font-size: 1em; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 50px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
 }
 
+/* Hover Effect for Buttons */
 .button-container button:hover {
-  background-color: #ff8f00;
+  background-color: #ff8f00; /* Darker yellow on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
 }
 
 /* Projects, Skills, Achievements, Contact Sections */
@@ -101,7 +114,7 @@ section {
 
 .project, ul li {
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9; /* Light background for project cards */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -111,20 +124,20 @@ section {
 }
 
 .project p, ul li {
-  color: #555;
+  color: #555; /* Gray text color */
   line-height: 1.6;
 }
 
 .project a {
   display: inline-block;
   margin-top: 10px;
-  color: #007acc;
+  color: #007acc; /* Link color */
   text-decoration: none;
   font-weight: bold;
 }
 
 .project a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline links on hover */
 }
 
 /* Hidden sections styling */
@@ -135,4 +148,71 @@ section {
 /* Active section */
 .active {
   display: block;
+}
+
+.go-back-button {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+.go-back-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+.go-back-button:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+/* Enlarged Image Styles */
+.enlarged {
+  transform: scale(1.2); /* Scale up to 120% */
+  transition: transform 0.3s ease; /* Smooth transition */
+  z-index: 10; /* Bring it to the front */
+}
+
+.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Default text color */
+}
+
+.dark-mode h3 {
+  color: #ffa726; /* Bright orange for h3 */
+}
+
+.dark-mode p {
+  color: #b2ebf2; /* Light cyan for paragraphs */
+}
+
+.dark-mode .button-container button {
+  background-color: #3a3a3a; /* Darker button background */
+  color: #fff; /* Keep white text */
+}
+
+.dark-mode .button-container button:hover {
+  background-color: #575757; /* Darker hover color */
+}
+.dark-mode .button-container button {
+  background-color: #3a3a3a; /* Darker button background */
+  color: #fff; /* Keep white text */
+}
+
+.dark-mode #projects .project, 
+.dark-mode ul li {
+  background-color: #2c2c2c; /* Dark background for project cards */
+  color: #ffffff; /* White text */
+}
+
+.dark-mode .project a {
+  color: #1e90ff; /* Brighter link color for dark mode */
+}
+
+.dark-mode .project a:hover {
+  text-decoration: underline; /* Underline links on hover in dark mode */
 }
