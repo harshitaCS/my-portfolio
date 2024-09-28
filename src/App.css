@@ -100,6 +100,28 @@ section {
   background-color: #ff8f00; /* Darker yellow on hover */
   transform: translateY(-2px); /* Slight upward movement on hover */
 }
+/* Dark Mode Toggle Button Styles */
+#darkModeToggleButton {
+  background-color: #007BFF; /* Blue background */
+  color: white; /* White text color */
+  border: none; /* No border */
+  padding: 10px 15px; /* Padding */
+  font-size: 16px; /* Font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+/* Hover Effect for Dark Mode Button */
+#darkModeToggleButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Move up slightly on hover */
+}
+
+/* Dark Mode Button Active State */
+#darkModeToggleButton:focus {
+  outline: none; /* Remove outline on focus */
+}
 
 /* Projects, Skills, Achievements, Contact Sections */
 #projects, #skills, #achievements, #contact {
@@ -198,21 +220,82 @@ section {
 .dark-mode .button-container button:hover {
   background-color: #575757; /* Darker hover color */
 }
-.dark-mode .button-container button {
-  background-color: #3a3a3a; /* Darker button background */
-  color: #fff; /* Keep white text */
+
+/* Styles for the contact section */
+#contact {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light gray background */
 }
 
-.dark-mode #projects .project, 
-.dark-mode ul li {
-  background-color: #2c2c2c; /* Dark background for project cards */
-  color: #ffffff; /* White text */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Spacing between inputs */
 }
 
-.dark-mode .project a {
-  color: #1e90ff; /* Brighter link color for dark mode */
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
-.dark-mode .project a:hover {
-  text-decoration: underline; /* Underline links on hover in dark mode */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #4CAF50; /* Change border color on focus */
+}
+
+textarea {
+  resize: none; /* Prevent resizing */
+  min-height: 100px; /* Minimum height for the textarea */
+}
+
+button[type="submit"] {
+  background-color: #007BFF; /* Blue */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Darker blue */
+}
+
+/* Feedback message styling */
+p {
+  margin-top: 10px;
+  color: red; /* Error messages in red */
+  font-weight: bold;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+.dark-mode button {
+  background-color: #555; /* Dark gray */
+  color: #fff;
+}
+
+.dark-mode button:hover {
+  background-color: #777; /* Lighter gray */
+}
+
+.dark-mode #contact {
+  background-color: #444; /* Darker background */
+}
+.dark-mode header h1 {
+  color: #ffa726; /* Bright color for the header text */
+}
+
+.dark-mode header p {
+  color: #b2ebf2; /* Light color for the paragraph text */
 }
